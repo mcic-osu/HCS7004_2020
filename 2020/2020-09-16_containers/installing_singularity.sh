@@ -14,7 +14,6 @@ wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz
 sudo tar -C /usr/local -xzvf go$VERSION.$OS-$ARCH.tar.gz
 rm go$VERSION.$OS-$ARCH.tar.gz
 echo 'export PATH=/usr/local/go/bin:${PATH}:${HOME}/go/bin' >> ~/.bashrc
-source ~/.bashrc
 export PATH=/usr/local/go/bin:${PATH}:${HOME}/go/bin
 go get -u github.com/golang/dep/cmd/dep
 

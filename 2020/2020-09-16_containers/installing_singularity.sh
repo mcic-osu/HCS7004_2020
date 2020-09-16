@@ -2,7 +2,10 @@
 
 # Install dependencies available through apt-get:
 sudo apt-get update
-sudo apt-get install -y build-essential libssl-dev uuid-dev libgpgme11-dev squashfs-tools libseccomp-dev pkg-config git cryptsetup-bin 
+sudo apt-get install -y \
+    build-essential libssl-dev uuid-dev libgpgme11-dev squashfs-tools libseccomp-dev \
+    wget pkg-config git cryptsetup-bin \
+    automake checkinstall zlib1g-dev libtbb-dev 
 
 # Install Go
 ## Another dependency for Singularity is the scripting language Go, and we'll need to manually install that:
